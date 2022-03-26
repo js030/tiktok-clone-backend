@@ -4,7 +4,7 @@ import Data from './data.js';
 import Videos from './dbModel.js';
 
 const app = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 
 const connection_url = 'mongodb+srv://kh:1234@cluster0.viqbh.mongodb.net/tiktok?retryWrites=true&w=majority';
